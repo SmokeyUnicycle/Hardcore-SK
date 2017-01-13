@@ -7,8 +7,8 @@
 
   <ThingDef ParentName="BaseGunCR">
     <defName>Gun_AssaultRifle</defName>
-    <label>M16 Rifle</label>
-    <description>A general-purpose military weapon for field or urban combat. It fires a three-round burst. Good range, low power, high rate of fire.</description>
+    <label>M16A3</label>
+    <description>A general-purpose weapon for field or urban combat. Good range, low power, high rate of fire.</description>
     <graphicData>
     <texPath>Things/Weapons/Assault_Carbine</texPath>
     <graphicClass>Graphic_Single</graphicClass>
@@ -78,8 +78,8 @@
 
 	<ThingDef ParentName="BaseGunCR">
 		<defName>RF_Gun_XMeight</defName>
-		<label>HK XM8 Military Rifle</label>
-		<description>Ancient pattern military weapon. Three-round burst. Good range, low power, high rate of fire.</description>
+		<label>HK XM8</label>
+		<description>Three-round burst. Good range, low power, high rate of fire.</description>
     <graphicData>
 		<texPath>Things/Weapons/XM8</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -218,8 +218,8 @@
 
   <ThingDef ParentName="BaseGunCR">
     <defName>Gun_AK47Gun</defName>
-    <label>AK-47</label>
-    <description>The AK-47 is a selective-fire, gas-operated 7.62×39mm assault rifle, first developed in the Soviet Union by Mikhail Kalashnikov. It is officially known as Avtomat Kalashnikova (Russian: Автомат Калашникова). Good damage, average range and rate of fire, poor accuracy.</description>
+    <label>AK-74</label>
+    <description>The AK-74 is a selective-fire, gas-operated 5.45×39mm assault rifle, developed in the Soviet Union as the third incarnation of the famous rifle by Mikhail Kalashnikov. It is officially known as Avtomat Kalashnikova 1974 (Russian: Автомат Калашникова образца 1974 года). Low damage, good range and rate of fire.</description>
     <graphicData>
       <texPath>Things/Weapons/Gun_AK47</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -227,12 +227,12 @@
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
       <MarketValue>1400</MarketValue>
-	  <AimEfficiency>0.46</AimEfficiency>
-	  <ShotSpread>0.10</ShotSpread>
-	  <SwayFactor>1.65</SwayFactor>
+	  <AimEfficiency>0.40</AimEfficiency>
+	  <ShotSpread>0.07</ShotSpread>
+	  <SwayFactor>1.52</SwayFactor>
       <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
       <Bulk>9.1</Bulk>
-      <Mass>3.60</Mass>
+      <Mass>3.30</Mass>
     </statBases>
     <weaponTags>
     <li>AdvancedGun</li>
@@ -248,11 +248,11 @@
     <verbs>
       <li Class="Combat_Realism.VerbPropertiesCR">
 		<recoilPattern>Regular</recoilPattern>
-		<recoilAmount>0.9</recoilAmount>
+		<recoilAmount>0.65</recoilAmount>
         <verbClass>Combat_Realism.Verb_ShootCR</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_762x39mmSoviet_FMJ</projectileDef>
-        <warmupTime>0.58</warmupTime>
+        <projectileDef>Bullet_545x39mmR_FMJ</projectileDef>
+        <warmupTime>0.52</warmupTime>
         <range>45</range>
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
@@ -271,7 +271,7 @@
 		  <li Class="Combat_Realism.CompProperties_AmmoUser">
 			<magazineSize>30</magazineSize>
 			<reloadTicks>230</reloadTicks>
-			<ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
+			<ammoSet>AmmoSet_545x39mmR</ammoSet>
 		  </li>
 		  <li Class="WHands.WhandCompProps">
 				<MainHand>(-0.26125,0.3,-0.1)</MainHand>
@@ -356,18 +356,18 @@
 	
 	<ThingDef ParentName="BaseGunCR">
 		<defName>Gun_TacticalCombatRifle</defName>
-		<label>MA5 ICWS</label>
-		<description>The MA5 Individual Combat Weapon System (MA5 ICWS or MA5 Assault rifle) is a standard-issue service rifle of the UNSC Marines.</description>
+		<label>MA5B ICWS</label>
+		<description>The MA5B Individual Combat Weapon System (MA5B ICWS or MA5B Assault rifle) is a standard-issue bullpup service rifle of the UNSC Marine Corps. It features a computerized targeting suite and an advanced recoil suppression system, allowing for firepower comparable to a 20th century GPMG.</description>
     <graphicData>
-		<texPath>Things/Weapons/BR55</texPath>
+		<texPath>Things/Weapons/MA39X</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 		<soundInteract>InteractRifle</soundInteract>
 		<statBases>
-			<MarketValue>1700</MarketValue>
-			<AimEfficiency>0.52</AimEfficiency>
-			<ShotSpread>0.07</ShotSpread>
-			<SwayFactor>1.55</SwayFactor>
+			<MarketValue>3000</MarketValue>
+			<AimEfficiency>0.6</AimEfficiency>
+			<ShotSpread>0.06</ShotSpread>
+			<SwayFactor>1.50</SwayFactor>
 			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
 			<Bulk>10.6</Bulk>
 			<Mass>3.70</Mass>
@@ -389,11 +389,11 @@
 		<verbs>
 		  <li Class="Combat_Realism.VerbPropertiesCR">
 			<recoilPattern>Regular</recoilPattern>
-			<recoilAmount>0.7</recoilAmount>
+			<recoilAmount>0.6</recoilAmount>
 			<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
-			<projectileDef>Bullet_556x45mmNATO_FMJ</projectileDef>
-			<burstShotCount>8</burstShotCount>
+			<projectileDef>Bullet_762x51mmNATO_FMJ</projectileDef>
+			<burstShotCount>10</burstShotCount>
 			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 			<warmupTime>0.60</warmupTime>
 			<range>50</range>
@@ -410,9 +410,9 @@
 			<aimedBurstShotCount>5</aimedBurstShotCount>
 		  </li>
 		  <li Class="Combat_Realism.CompProperties_AmmoUser">
-			<magazineSize>35</magazineSize>
+			<magazineSize>60</magazineSize>
 			<reloadTicks>250</reloadTicks>
-			<ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+			<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
 		  </li>
 		  <li Class="WHands.WhandCompProps">
 				<MainHand>(-0.3,0.3,-0.1)</MainHand>
